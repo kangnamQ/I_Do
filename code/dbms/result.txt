@@ -1,0 +1,81 @@
+C:\Users\kayal\AppData\Local\Programs\Python\Python38\python.exe A:/robot/HW1_강남규_20154523/main.py
+
+다음과 같은 columns를 추가합니다:
+['name', 'age', 'gender', 'country']
+
+newdata값을 data에 추가합니다.
+data : {'name': [], 'age': [], 'gender': [], 'country': []} 
+newdata : {'name': 'tom', 'age': 3, 'gender': 'male', 'country': 'usa'}
+
+
+newdata값을 data에 추가합니다.
+data : {'name': ['tom'], 'age': [3], 'gender': ['male'], 'country': ['usa']} 
+newdata : {'name': 'lee', 'age': 4, 'gender': 'female', 'country': 'china'}
+
+
+newdata값을 data에 추가합니다.
+data : {'name': ['tom', 'lee'], 'age': [3, 4], 'gender': ['male', 'female'], 'country': ['usa', 'china']} 
+newdata : {'name': 'kim', 'age': 5, 'gender': 'male', 'country': 'korea'}
+
+
+newdata값을 data에 추가합니다.
+data : {'name': ['tom', 'lee', 'kim'], 'age': [3, 4, 5], 'gender': ['male', 'female', 'male'], 'country': ['usa', 'china', 'korea']} 
+newdata : {'name': 'jane', 'age': 6, 'gender': 'female'}
+
+'country' is NOT in this newdata
+
+data를 출력합니다.
+
+name            age             gender          country         
+----            ---             ------          -------         
+tom             3               male            usa             
+lee             4               female          china           
+kim             5               male            korea           
+
+
+다음의 이름을 가진 데이터를 가져옵니다:
+['kim', 'tom']
+
+data를 출력합니다.
+
+name            age             gender          country         
+----            ---             ------          -------         
+kim             5               male            korea           
+tom             3               male            usa             
+
+
+다음의 범위안의 나이를 가진 데이터를 불러옵니다:
+2 <= age < 5
+
+data를 출력합니다.
+
+name            age             gender          country         
+----            ---             ------          -------         
+tom             3               male            usa             
+lee             4               female          china           
+
+
+other값을 data에 추가합니다.
+data : {'name': ['tom', 'lee', 'kim'], 'age': [3, 4, 5], 'gender': ['male', 'female', 'male'], 'country': ['usa', 'china', 'korea']} 
+other : {'name': ['jane'], 'age': [6], 'gender': ['female'], 'country': ['uk']}
+
+data를 출력합니다.
+
+name            age             gender          country         
+----            ---             ------          -------         
+tom             3               male            usa             
+lee             4               female          china           
+kim             5               male            korea           
+jane            6               female          uk              
+
+remove : ['tom', 'lee']
+
+data를 출력합니다.
+
+name            age             gender          country         
+----            ---             ------          -------         
+kim             5               male            korea           
+jane            6               female          uk              
+
+
+Process finished with exit code 0
