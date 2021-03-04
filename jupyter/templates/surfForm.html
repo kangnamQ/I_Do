@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>순천향 서핑 대회</h2>
+
+<h3>선수 조회</h3>
+<form method="post" action="/show">
+  <div>
+    <label>이름</label>
+    <input name="name" type="text">
+  </div>
+
+  <div class='button'>
+    <input type="submit" value="조회">
+  </div>
+</form>
+
+
+<br>
+<hr>
+<h3>선수 입력</h3>
+<form method="POST" action="/insert"
+  <div>
+    <label>이름</label>
+    <input name="name" type="text">
+  </div>
+  <div>
+    <label>평균점수</label>
+    <input name="score" type="text">
+  </div>
+  <div>
+    <label>성별:</label>
+    <label>남</label>
+    <input type="radio" name="gender" value="male">
+    <label>여</label>
+    <input type="radio" name="gender" value="female">
+  </div>
+  <div>
+    <label>국가</label>
+    <select name = "country" size="3">
+      <option value = "kor">한국</option>
+      <option value = "usa">미국</option>
+      <option value = "chn">중국</option>
+      <option value = "jpa">일본</option>
+      <option value = "eng">영국</option>
+      <option value = "fra">프랑스</option>
+      <option value = "aus">호주</option>
+    </select>
+  </div>
+  <div class='button'>
+    <input type="submit" value="전송">
+    <input type="reset" value="취소">
+  </div>
+</form>
+
+{% endblock %}

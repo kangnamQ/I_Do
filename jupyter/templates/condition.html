@@ -1,0 +1,26 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  </head>
+
+  <body>
+    <div id='main'>
+      {% if size == "Big" %}
+      <h1> 안녕, 컴퓨터공학과 ! </h1>
+
+      {% elif size == "Medium" %}
+      <h3> 안녕, 컴퓨터공학과 ! </h3>
+
+      {% elif size == "Small" %}
+      <h6> 안녕, 컴퓨터공학과 ! </h6>
+      
+      {% else %}
+      안녕, 컴퓨터공학과 !
+
+      {% endif %}
+      <p> Size: {{ size }} <p>
+    </div>
+  </body>
+</html>

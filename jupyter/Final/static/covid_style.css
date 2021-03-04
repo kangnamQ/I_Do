@@ -1,0 +1,31 @@
+h2 {
+  font-size: 2em;
+  margin-top: 40px;
+  text-align: center;
+  letter-spacing: -2px; /* 글자 간격 줄임 */
+}
+form {
+  /* 페이지의 중앙에 Form 표시 */
+  margin: 0 auto;  /*브라우저가 자동으로 여백 계산*/
+  width: 350px;
+
+  /* To see the outline of the form */
+  padding: 1em;  /* 테두리와 내용 사이 간격 */
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}
+form div + div {
+  /* div div 사이에 여백 추가 */
+  margin-top: 1em;
+}
+label {
+  /* 모든 라벨이 같은 너비와 오른쪽 정렬 */
+  display: inline-block;  /* 새로운 줄로 시작하지 않음 */
+  width: 70px;
+  text-align: right;
+}
+.button {  /* button 클래스에 적용 */
+  margin-top: 2em;
+  padding-left: 90px;
+  margin-left: .5em;
+}
