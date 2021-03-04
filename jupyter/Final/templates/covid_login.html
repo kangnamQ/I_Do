@@ -1,0 +1,32 @@
+{% extends 'covid_base.html' %}
+
+{% block body %}
+
+<h2>COVID19 My Login</h2>
+  <br>
+<form method="post" action="/login">
+  
+    <label>계정</label>
+    <input name="id" type="text">
+  </div>
+  <br>
+  <div>
+    <label>비번</label>
+    <input name="passwd" type="password">
+  </div>
+  <br><br>
+  <div class='button'>
+    <input type="submit" value="로그인">
+    <input type="reset" value="취소">
+  </div>
+</form>
+
+<br>
+<hr>
+<form method="post" action="/member">
+  <div>
+    <input type="submit" value="회원가입"><br>
+  </div>
+
+</form>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>로그인</h2>
+<form method="post" action="/login">
+  <div>
+    <label>계정</label>
+    <input name="id" type="text">
+  </div>
+  <div>
+    <label>비번</label>
+    <input name="passwd" type="password">
+  </div>
+  <div class='button'>
+    <input type="submit" value="로그인">
+    <input type="reset" value="취소">
+  </div>
+</form>
+
+<br>
+<hr>
+<form method="post" action="/member">
+  <div>
+    <input type="submit" value="회원가입"> <br>
+  </div>
+</form>
+{% endblock %}

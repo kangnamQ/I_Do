@@ -1,0 +1,22 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <title>Current Corona Situation</title>
+  </head>
+
+  <body>
+    <div id='main'>
+    <h2>코로나 환자 현황<h2>
+    <h3><p>Today = <strong> {{ today_n }} </strong></p><h3>
+    <ul>
+      {% for where_n in where_n %}
+      <li> {{ where_n }} <il>
+      {% endfor %}
+    </ul>
+    </div>
+
+    <h5><p>현재시간 : {{ dt }} <p><h5>
+
+    <h5><p><p> 자료는 중앙재난안전대책본부(http://ncov.mohw.go.kr/)의 집계를 바탕으로 작성되었습니다. <p><p><h5>
+  </body>
+</html>
